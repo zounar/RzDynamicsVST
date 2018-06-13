@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="gtQ1iw" name="RzDynamics" projectType="audioplug" version="1.0.0"
+              bundleIdentifier="robinzon.RzDynamics" includeBinaryInAppConfig="1"
+              buildVST="1" buildVST3="0" buildAU="0" buildAUv3="0" buildRTAS="0"
+              buildAAX="0" pluginName="RzDynamics" pluginDesc="Dynamics processor including compressor, expander, limiter and gate"
+              pluginManufacturer="Robin Zon" pluginManufacturerCode="rZon"
+              pluginCode="rzDy" pluginChannelConfigs="" pluginIsSynth="0" pluginWantsMidiIn="0"
+              pluginProducesMidiOut="0" pluginIsMidiEffectPlugin="0" pluginEditorRequiresKeys="0"
+              pluginAUExportPrefix="RzDyn" pluginRTASCategory="" aaxIdentifier="robinzon.RzDynamicz"
+              pluginAAXCategory="AAX_ePlugInCategory_Dynamics" jucerVersion="4.2.1"
+              companyName="Robin Zon" companyEmail="xzonro00@vutbr.cz">
+  <MAINGROUP id="tlJoaV" name="RzDynamics">
+    <GROUP id="{D9CAC031-6D68-03BA-9B00-9D8829394660}" name="Source">
+      <GROUP id="{888CA7FA-BA76-3FEB-0534-BB227F6904A1}" name="RzCore">
+        <FILE id="i6i8Jt" name="RzBuffer.h" compile="0" resource="0" file="Source/RzBuffer.h"/>
+        <FILE id="epieO0" name="RzConvertor.h" compile="0" resource="0" file="Source/RzConvertor.h"/>
+        <FILE id="HM4f7X" name="RzDynamicFilter.h" compile="0" resource="0"
+              file="Source/RzDynamicFilter.h"/>
+        <FILE id="h6GfY6" name="RzEnvelopeFollower.h" compile="0" resource="0"
+              file="Source/RzEnvelopeFollower.h"/>
+        <FILE id="I2v3eg" name="RzFunctions.h" compile="0" resource="0" file="Source/RzFunctions.h"/>
+        <FILE id="xoZi8w" name="RzFxCore.h" compile="0" resource="0" file="Source/RzFxCore.h"/>
+        <FILE id="L4ZqDq" name="RzProcessorElement.h" compile="0" resource="0"
+              file="Source/RzProcessorElement.h"/>
+        <FILE id="pBwjdW" name="RzSignalBlock.h" compile="0" resource="0" file="Source/RzSignalBlock.h"/>
+        <FILE id="B6pFUe" name="RzSignalBlockWithBuffer.h" compile="0" resource="0"
+              file="Source/RzSignalBlockWithBuffer.h"/>
+      </GROUP>
+      <GROUP id="{12EEA6CF-8106-A347-72EB-7EA81414216C}" name="RzFx">
+        <FILE id="ZwdLCy" name="RzAudioParameterBool.cpp" compile="1" resource="0"
+              file="Source/RzAudioParameterBool.cpp"/>
+        <FILE id="Ha0zRo" name="RzAudioParameterBool.h" compile="0" resource="0"
+              file="Source/RzAudioParameterBool.h"/>
+        <FILE id="Z9v3Mx" name="RzAudioParameterFloat.cpp" compile="1" resource="0"
+              file="Source/RzAudioParameterFloat.cpp"/>
+        <FILE id="q8jspm" name="RzAudioParameterFloat.h" compile="0" resource="0"
+              file="Source/RzAudioParameterFloat.h"/>
+        <FILE id="OzHhnn" name="RzAudioParameterInt.cpp" compile="1" resource="0"
+              file="Source/RzAudioParameterInt.cpp"/>
+        <FILE id="jzNDcl" name="RzAudioParameterInt.h" compile="0" resource="0"
+              file="Source/RzAudioParameterInt.h"/>
+        <FILE id="nZIsmM" name="RzAudioProcessor.cpp" compile="1" resource="0"
+              file="Source/RzAudioProcessor.cpp"/>
+        <FILE id="Q4xW4r" name="RzAudioProcessor.h" compile="0" resource="0"
+              file="Source/RzAudioProcessor.h"/>
+        <FILE id="DGnBlW" name="RzAudioProcessorEditor.cpp" compile="1" resource="0"
+              file="Source/RzAudioProcessorEditor.cpp"/>
+        <FILE id="CgvX2H" name="RzAudioProcessorEditor.h" compile="0" resource="0"
+              file="Source/RzAudioProcessorEditor.h"/>
+      </GROUP>
+      <GROUP id="{B36B6844-B301-FFAF-201C-D96E62296AA5}" name="RzGui">
+        <FILE id="wtcumH" name="RzAudioVisualiserComponent.cpp" compile="1"
+              resource="0" file="Source/RzAudioVisualiserComponent.cpp"/>
+        <FILE id="Ck8FGJ" name="RzAudioVisualiserComponent.h" compile="0" resource="0"
+              file="Source/RzAudioVisualiserComponent.h"/>
+        <FILE id="vAvYQy" name="RzBackground.cpp" compile="1" resource="0"
+              file="Source/RzBackground.cpp"/>
+        <FILE id="t5n2t4" name="RzButton.cpp" compile="1" resource="0" file="Source/RzButton.cpp"/>
+        <FILE id="QIeKqr" name="RzButton.h" compile="0" resource="0" file="Source/RzButton.h"/>
+        <FILE id="wCmxyc" name="RzComboBox.cpp" compile="1" resource="0" file="Source/RzComboBox.cpp"/>
+        <FILE id="tATWD3" name="RzComboBox.h" compile="0" resource="0" file="Source/RzComboBox.h"/>
+        <FILE id="X8l7Rz" name="RzGuiDynamicFilterAR.cpp" compile="1" resource="0"
+              file="Source/RzGuiDynamicFilterAR.cpp"/>
+        <FILE id="K4NsM0" name="RzGuiDynamicFilterAR.h" compile="0" resource="0"
+              file="Source/RzGuiDynamicFilterAR.h"/>
+        <FILE id="VOqr4J" name="RzGuiDynamicFilterARH.cpp" compile="1" resource="0"
+              file="Source/RzGuiDynamicFilterARH.cpp"/>
+        <FILE id="aWyL25" name="RzGuiDynamicFilterARH.h" compile="0" resource="0"
+              file="Source/RzGuiDynamicFilterARH.h"/>
+        <FILE id="CdeOqO" name="RzGuiEnvelopeFollowerPeak.cpp" compile="1"
+              resource="0" file="Source/RzGuiEnvelopeFollowerPeak.cpp"/>
+        <FILE id="CSEzhE" name="RzGuiEnvelopeFollowerPeak.h" compile="0" resource="0"
+              file="Source/RzGuiEnvelopeFollowerPeak.h"/>
+        <FILE id="PuSj7N" name="RzGuiEnvelopeFollowerRMS.cpp" compile="1" resource="0"
+              file="Source/RzGuiEnvelopeFollowerRMS.cpp"/>
+        <FILE id="erKKwy" name="RzGuiEnvelopeFollowerRMS.h" compile="0" resource="0"
+              file="Source/RzGuiEnvelopeFollowerRMS.h"/>
+        <FILE id="juhZiW" name="RzGuiFxCoreComp.cpp" compile="1" resource="0"
+              file="Source/RzGuiFxCoreComp.cpp"/>
+        <FILE id="JGgPol" name="RzGuiFxCoreComp.h" compile="0" resource="0"
+              file="Source/RzGuiFxCoreComp.h"/>
+        <FILE id="DcCCPf" name="RzGuiFxCoreExp.cpp" compile="1" resource="0"
+              file="Source/RzGuiFxCoreExp.cpp"/>
+        <FILE id="oAmIcW" name="RzGuiFxCoreExp.h" compile="0" resource="0"
+              file="Source/RzGuiFxCoreExp.h"/>
+        <FILE id="TMqQY2" name="RzGuiFxCoreGate.cpp" compile="1" resource="0"
+              file="Source/RzGuiFxCoreGate.cpp"/>
+        <FILE id="RbBMl3" name="RzGuiFxCoreGate.h" compile="0" resource="0"
+              file="Source/RzGuiFxCoreGate.h"/>
+        <FILE id="ImlcVA" name="RzGuiFxCoreLim.cpp" compile="1" resource="0"
+              file="Source/RzGuiFxCoreLim.cpp"/>
+        <FILE id="H6cP9R" name="RzGuiFxCoreLim.h" compile="0" resource="0"
+              file="Source/RzGuiFxCoreLim.h"/>
+        <FILE id="EGzPPX" name="RzGuiVCA.cpp" compile="1" resource="0" file="Source/RzGuiVCA.cpp"/>
+        <FILE id="EA8PyN" name="RzGuiVCA.h" compile="0" resource="0" file="Source/RzGuiVCA.h"/>
+        <FILE id="wmOJuR" name="RzInfoWindow.cpp" compile="1" resource="0"
+              file="Source/RzInfoWindow.cpp"/>
+        <FILE id="wz9MxY" name="RzInfoWindow.h" compile="0" resource="0" file="Source/RzInfoWindow.h"/>
+        <FILE id="vvUPHm" name="RzKnob.cpp" compile="1" resource="0" file="Source/RzKnob.cpp"/>
+        <FILE id="AMohLU" name="RzKnob.h" compile="0" resource="0" file="Source/RzKnob.h"/>
+      </GROUP>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2015 targetFolder="Builds/VisualStudio2015" vstFolder="" vst3Folder="">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="1" optimisation="1" targetName="RzDynamics"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="0" optimisation="3" targetName="RzDynamics" useRuntimeLibDLL="0"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2015>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_QUICKTIME="disabled"/>
+</JUCERPROJECT>

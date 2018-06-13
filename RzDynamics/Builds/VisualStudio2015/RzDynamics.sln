@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2015
+Project("{3E2C18F6-919E-1538-2137-4BD9E5A48DFD}") = "RzDynamics", "RzDynamics.vcxproj", "{EA782F55-197C-0FAC-786E-D3691B0A078A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA782F55-197C-0FAC-786E-D3691B0A078A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EA782F55-197C-0FAC-786E-D3691B0A078A}.Debug|Win32.Build.0 = Debug|Win32
+		{EA782F55-197C-0FAC-786E-D3691B0A078A}.Release|Win32.ActiveCfg = Release|Win32
+		{EA782F55-197C-0FAC-786E-D3691B0A078A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
